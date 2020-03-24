@@ -1,0 +1,31 @@
+{
+  "name": "hapi-typescript-init",
+  "version": "1.0.0",
+  "description": "Hapi training",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "nodemon -e ts --exec \"npm run buildrun\"",
+    "buildrun": "npm run build && node ./dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eliasdefrancisco/hapi-typescript-init.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eliasdefrancisco/hapi-typescript-init/issues"
+  },
+  "homepage": "https://github.com/eliasdefrancisco/hapi-typescript-init#readme",
+  "dependencies": {
+    "@hapi/hapi": "^19.1.1"
+  },
+  "devDependencies": {
+    "@types/hapi__hapi": "^19.0.2",
+    "@types/node": "^13.9.3",
+    "nodemon": "^2.0.2",
+    "typescript": "^3.8.3"
+  }
+}
